@@ -1,5 +1,25 @@
 # Rust Actix Framework Frontend
 
+This lightweight UI works with [rust-actix-framework](https://github.com/ddimaria/rust-actix-framework).
+
+## Motivation
+
+As a validation of the features in [rust-actix-framework](https://github.com/ddimaria/rust-actix-framework). As features grow in the backend, this project will grow.
+
+## Features
+
+- Written in React 16.8+ and TypeScript
+- Simplified but powerful state management
+- Semantic UI Design
+- Authentication
+- User Management
+
+## Featured Packages
+
+- semantic-ui-react
+- react-hook-form
+- yup
+
 ## Available Scripts
 
 In the project directory, you can run:
