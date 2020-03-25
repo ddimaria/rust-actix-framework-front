@@ -1,0 +1,39 @@
+.side-nav a,
+.side-nav a:hover,
+.side-nav a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.ui.secondary.menu {
+  background: #000;
+}
+.side-nav ul li a,
+.side-nav ul li .heading {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+.side-nav ul li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+.side-nav i.icon {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.side-nav.ui.menu .item {
+  color: #fff;
+}
+
+.sidebar-item-alignment-container {
+  display: flex;
+  align-items: center;
+}
+
+.side-nav .ui.divider {
+  border-top-color: #fff !important;
+}

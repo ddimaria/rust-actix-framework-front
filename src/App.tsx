@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { AppProvider } from "./AppState";
+import Routes from "./Routes";
+import ErrorBoundary from "./ErrorBoundary";
+import Loading from "./loading/Loading";
+import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <AppProvider>
+        <BrowserRouter>
+          <ErrorBoundary>
+            <Loading />
+            <Routes />
+          </ErrorBoundary>
+        </BrowserRouter>
+      </AppProvider>
     </div>
   );
-}
+};
 
-export default App;
+export default function AppWithErrorBoundary() {
+  return <App />;
+}
